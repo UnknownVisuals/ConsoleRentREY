@@ -9,4 +9,6 @@ module com.consolesrr.consolesrentrey {
 
     opens com.consolesrr.consolesrentrey to javafx.fxml;
     exports com.consolesrr.consolesrentrey;
+    exports com.consolesrr.consolesrentrey.controllers;
+    opens com.consolesrr.consolesrentrey.controllers to javafx.fxml;
 }

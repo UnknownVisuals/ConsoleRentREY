@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -10,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="signUpAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #1B262C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.consolesrr.consolesrentrey.SignUpController">
+<AnchorPane fx:id="signUpAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #1B262C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.consolesrr.consolesrentrey.controllers.SignUpController">
    <children>
       <ImageView layoutX="319.0" layoutY="14.0">
          <image>
@@ -62,22 +63,6 @@
             <Insets left="32.0" />
          </padding>
       </TextField>
-      <TextField fx:id="passwordTextField" layoutX="78.0" layoutY="457.0" prefHeight="48.0" prefWidth="320.0" promptText="password">
-         <font>
-            <Font name="Poppins Regular" size="16.0" />
-         </font>
-         <padding>
-            <Insets left="32.0" />
-         </padding>
-      </TextField>
-      <TextField fx:id="confirmPasswordTextField" layoutX="78.0" layoutY="515.0" prefHeight="48.0" prefWidth="320.0" promptText="confirm password">
-         <font>
-            <Font name="Poppins Regular" size="16.0" />
-         </font>
-         <padding>
-            <Insets left="32.0" />
-         </padding>
-      </TextField>
       <Button layoutX="158.0" layoutY="583.0" mnemonicParsing="false" onAction="#signUpButtonAction" prefHeight="48.0" prefWidth="160.0" style="-fx-background-color: #3282B8;" text="Sign up" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
@@ -92,5 +77,27 @@
             <Font name="Poppins Bold" size="16.0" />
          </font>
       </Hyperlink>
+      <PasswordField fx:id="passwordPasswordField" layoutX="78.0" layoutY="457.0" prefHeight="48.0" prefWidth="320.0" promptText="password">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="32.0" />
+         </padding>
+      </PasswordField>
+      <PasswordField fx:id="confirmPasswordPasswordField" layoutX="78.0" layoutY="515.0" prefHeight="48.0" prefWidth="320.0" promptText="confirm password">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="32.0" />
+         </padding>
+      </PasswordField>
    </children>
 </AnchorPane>
